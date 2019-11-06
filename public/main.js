@@ -40,7 +40,8 @@ const addOneToRightScore = () => {
     if (document.querySelector('.team-2-name').textContent === 'Team 2') {
       document.querySelector('.team-2-name').textContent = 'You Win!'
     } else {
-      document.querySelector('.team-2-name').textContent + ' Win!'
+      document.querySelector('.team-2-name').textContent =
+        document.querySelector('.team-2-name').textContent + ' Win!'
     }
     document.querySelector('.resetbox').style.display = 'flex'
     disableButtons(true)
